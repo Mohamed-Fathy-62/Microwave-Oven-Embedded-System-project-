@@ -2,8 +2,8 @@
 #define NVIC_ST_RELOAD_R							(*((volatile unsigned long *)0xE000E014))
 #define NVIC_ST_CURRENT_R							(*((volatile unsigned long *)0xE000E018))	
 
-void SysTich_Init();
-void SysTich_Wait(unsigned long delay);
-void SysTich_Wait_1ms(unsigned long delay);
-void SysTich_Wait_1s(unsigned long factor);
-void SysTich_Wait_1min(unsigned long number_of_minutes);
+void SysTick_Init();
+void SysTick_Wait(unsigned long delay);
+void SysTick_Wait_1ms(unsigned long delay);
+void SysTick_Wait_1s(unsigned long factor);
+void SysTick_Wait_1min(unsigned long number_of_minutes);
